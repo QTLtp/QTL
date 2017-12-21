@@ -7,8 +7,8 @@ public class gen {
 	int genNr;
 	String loc;
 	String naam;
-	ArrayList <Float >aLijst;
-	ArrayList <Float> bLijst;
+	ArrayList <Double>aLijst;
+	ArrayList <Double> bLijst;
 	
 	public int genNr() {
 		return genNr;
@@ -31,19 +31,19 @@ public class gen {
 		this.naam = naam;
 	}
 
-	public ArrayList<Float> getaLijst() {
+	public ArrayList<Double> getaLijst() {
 		return aLijst;
 	}
 
-	public void setaLijst(ArrayList<Float> aLijst) {
+	public void setaLijst(ArrayList<Double> aLijst) {
 		this.aLijst = aLijst;
 	}
 
-	public ArrayList<Float> getbLijst() {
+	public ArrayList<Double> getbLijst() {
 		return bLijst;
 	}
 
-	public void setbLijst(ArrayList<Float> bLijst) {
+	public void setbLijst(ArrayList<Double> bLijst) {
 		this.bLijst = bLijst;
 	}
 	

@@ -11,7 +11,7 @@ public class readfiles {
 	static BufferedReader inFile;
 	static ArrayList<Object> objectenLijst = new ArrayList();
 	
-	static ArrayList<Float> qua = new ArrayList<Float>();
+	static ArrayList<Double> qua = new ArrayList<Double>();
 	static ArrayList<String> loc = new ArrayList<String>();
 	static ArrayList<String> genNamen = new ArrayList<String>();
 	
@@ -63,9 +63,9 @@ public class readfiles {
 	        do{
 	        	if (!(line.contains("-"))) {
 	        		a = line.split("\t");
-	        		qua.add(Float.parseFloat(a[1]));
+	        		qua.add(Double.parseDouble(a[1]));
 	        	} else {
-	        		qua.add(-1.0f);
+	        		qua.add(-1.0);
 	        	}
 	        }while ((line = inFile.readLine()) != null);
 	        inFile.close();
@@ -78,10 +78,10 @@ public class readfiles {
 	private static void verwerkData(){
 		gen a;
 		String b;
-		float c;
+		double c;
 		
-		ArrayList<Float> aLijst = new ArrayList();
-		ArrayList<Float> bLijst = new ArrayList();
+		ArrayList<Double> aLijst = new ArrayList<Double>();
+		ArrayList<Double> bLijst = new ArrayList<Double>();
 		
 		for(int i = 0; i < genNamen.size(); i++) {
 			a = new gen();
