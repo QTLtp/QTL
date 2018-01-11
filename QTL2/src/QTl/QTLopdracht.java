@@ -66,7 +66,7 @@ public class QTLopdracht {
 		try {
 			FileWriter fileWriter = new FileWriter("resultaten.txt");
 	        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			bufferedWriter.write("2Gen: \t p-value\n");
+			bufferedWriter.write("Gen: \t p-value\n");
 			for(int i = 0; i < resultaten.length; i++) {
 				bufferedWriter.write(System.lineSeparator()+((gen) objectenLijst.get(i)).getNaam()+"\t"+resultaten[i]);
 				
