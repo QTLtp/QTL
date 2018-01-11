@@ -35,6 +35,13 @@ public class gen {
 		return aLijst;
 	}
 
+	public gen(String loc, String naam, ArrayList<Double> aLijst, ArrayList<Double> bLijst) {
+		this.loc = loc;
+		this.naam = naam;
+		this.aLijst = aLijst;
+		this.bLijst = bLijst;
+	}
+
 	public void setaLijst(ArrayList<Double> aLijst) {
 		this.aLijst = aLijst;
 	}

@@ -80,12 +80,16 @@ public class readfiles {
 		String b;
 		double c;
 		
-		ArrayList<Double> aLijst = new ArrayList<Double>();
-		ArrayList<Double> bLijst = new ArrayList<Double>();
+		ArrayList<Double> aLijst;
+		ArrayList<Double> bLijst;
 		
 		for(int i = 0; i < genNamen.size(); i++) {
-			a = new gen();
+//			a = new gen();
 			b = loc.get(i); 
+			
+			aLijst = new ArrayList<Double>();
+			bLijst = new ArrayList<Double>();
+			
 			
 			for(int x = 0; x < b.length(); x++) {
 				c = qua.get(x);
@@ -96,11 +100,12 @@ public class readfiles {
 				}
 			}
 			
-			a.setaLijst(aLijst);
-			a.setbLijst(bLijst);
-			a.setLoc(loc.get(i));
-			a.setNaam(genNamen.get(i));
-			objectenLijst.add(a);
+			objectenLijst.add(new gen(loc.get(i), genNamen.get(i), aLijst, bLijst));
+//			a.setaLijst(aLijst);
+//			a.setbLijst(bLijst);
+//			a.setLoc(loc.get(i));
+//			a.setNaam(genNamen.get(i));
+//			objectenLijst.add(a);
 		}
 	}
 }
