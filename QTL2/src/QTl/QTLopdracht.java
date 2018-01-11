@@ -1,3 +1,6 @@
+
+
+
 package QTl;
 
 import java.io.BufferedReader;
@@ -14,12 +17,24 @@ import javax.swing.JOptionPane;
 
 import org.apache.commons.math3.stat.inference.TTest;
 
+import jdk.jfr.Description;
 
+
+/**
+ * @author Thijs & Pim
+ *
+ */
 public class QTLopdracht {
 
 	static ArrayList<Object> objectenLijst;
 	static double[] resultaten;
 
+	
+	/**
+	 * @param args
+	 * @return void
+	 * @function een normale main functie die readfiles aanroept
+	 */
 	public static void main(String[] args) {
 		
 		objectenLijst = readfiles.readfiles();
@@ -33,6 +48,11 @@ public class QTLopdracht {
 		
 	}
 	
+	
+	/**
+	 * @return void
+	 * @functie loopt over de objectenLijst en voert per gen/object een t.test uit. De resultaten worden in een array worden opgeslagen.
+	 */
 	public static void statistiek(){
 		double t_statistic;
 		double [] sample1;
@@ -61,6 +81,10 @@ public class QTLopdracht {
 		}
 	}
 	
+	/**
+	 * @return void
+	 * @functie schrijft de resultaten over in het bestand resultaten.txt
+	 */
 	public static void safeResults() {
 		
 		try {

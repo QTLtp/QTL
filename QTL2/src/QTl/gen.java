@@ -2,6 +2,10 @@ package QTl;
 
 import java.util.ArrayList;
 
+/**
+ * @functie is een object gen waarin de naam, loc, genNr, en de gefilterde lijst met markers en zonder makers bevat.
+ *
+ */
 public class gen {
 
 	int genNr;

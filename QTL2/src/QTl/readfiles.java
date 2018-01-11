@@ -15,6 +15,10 @@ public class readfiles {
 	static ArrayList<String> loc = new ArrayList<String>();
 	static ArrayList<String> genNamen = new ArrayList<String>();
 	
+	/**
+	 * @return een lijst waarin verschillenden genen in staan.
+	 * @functie voor de rest is het gewoon een main functie
+	 */
 	public static ArrayList<Object> readfiles() {
 		quaFile();
 		locFile();
@@ -22,6 +26,10 @@ public class readfiles {
 		return objectenLijst;
 	}
 	
+	/**
+	 * @return void
+	 * @functie leest het LOC bestand en slaat de gegevens op in het object gen
+	 */
 	private static void locFile() {
 		try {
 	        inFile = new BufferedReader(new FileReader("C:\\thijs\\blok2\\QTL\\CvixLerC9.LOC"));
@@ -53,6 +61,10 @@ public class readfiles {
 	    }
 	}
 	
+	/**
+	 * @return void
+	 * @functie leest het QUA bestand en slaat de gegevens op in het object gen
+	 */
 	private static void quaFile() {
 		try {
 	        inFile = new BufferedReader(new FileReader("C:\\thijs\\blok2\\QTL\\CvixLerC9.QUA"));
@@ -75,6 +87,11 @@ public class readfiles {
 	    }
 	}
 	
+	
+	/**
+	 * @return void
+	 * @functie haalt de string met de marker info uit gen op en voegt per a/b de bijhorende waarde op aan een arraylist
+	 */
 	private static void verwerkData(){
 		gen a;
 		String b;
